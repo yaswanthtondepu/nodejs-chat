@@ -15,6 +15,10 @@ var port = process.env.PORT || 8081;
 
 app.listen(port);
 
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
 // app.post("/get_messages", function (request, result) {
 // 	connection.query("SELECT * from chat where " + request.body.fromUserId + " in (fromUserId, toUserId) and " + request.body.toUserId + " in (fromUserId, toUserId) order by sentTime ASC", function (error, messages) {
 // 		result.end(JSON.stringify(messages));
