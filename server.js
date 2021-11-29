@@ -18,10 +18,10 @@ app.use(function (request, result, next) {
 // 	});
 // });
 var connection = mysql.createConnection({
-	"host": "localhost",
-	"user": "root",
-	"password": "",
-	"database": "lunamar",
+	"host": "utacloud2",
+	"user": "vxt9613_admin",
+	"password": "lunamarmanagement",
+	"database": "vxt9613_lunamarManagement",
 });
 
 connection.connect(function (error) {
